@@ -5,7 +5,7 @@ A self-contained means of testing queries for the WOS API.
 You will need to edit this program with the query you want to run.
 
 Usage:
-    wos_api.py <config_file>
+    python wos_api.py <config_file>
 
 '''
 

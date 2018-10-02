@@ -4,7 +4,7 @@ A self-contained means of testing queries for the CrossRef API.
 You will need to edit this program with the query you want to run.
 
 Usage:
-    ./crossref_api.py
+    python crossref_api.py
 
 Requirements:
     habanero

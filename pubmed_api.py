@@ -5,7 +5,7 @@ A self-contained means of testing queries for the PubMed API.
 You will need to edit this program with the query you want to run.
 
 Usage:
-    pubmed_api.py <config_file>
+    python pubmed_api.py <config_file>
 
 Requirements:
     PyYAML
