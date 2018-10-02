@@ -9,7 +9,7 @@ Usage:
 
 Requirements:
     PyYAML
-    requests
+    Entrez
 
 '''
 
