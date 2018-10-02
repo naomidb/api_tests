@@ -1,0 +1,11 @@
+# VIVO
+vivo_email: Email address for VIVO account with query/update access
+vivo_password: Password for said account
+u_endpoint: Endpoint for update api
+q_endpoint: Endpoint for query api
+
+# WOS
+wos_credentials: "Username:Password" encoded in base 64
+
+# PubMed
+pm_email: Email address to link to PubMed queries (inc ase you are warned of future throttling)
