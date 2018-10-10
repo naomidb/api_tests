@@ -10,8 +10,11 @@ You can run this with a query, insert, or delete flag. It requires a config file
 
 ### Config requirements
 vivo_email: Email address for VIVO account with query/update access
+
 vivo_password: Password for said account
+
 u_endpoint: Endpoint for update api
+
 q_endpoint: Endpoint for query api
 
 ## WOS API
