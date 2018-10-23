@@ -33,7 +33,7 @@ def do_query(payload, endpoint):
     return response
 
 def do_update(payload, endpoint):
-    print("Query:\n:" + payload['query'])
+    print("Query:\n" + payload['query'])
     response = requests.post(endpoint, params=payload, verify=False)
     print(response)
     return response
@@ -53,16 +53,31 @@ def main(q_type, config_path):
                     }
                 }
                 """
+        payload = {
+        'email': email,
+        'password': password,
+        'update': query,
+        }
+        do_update(payload, endpoint)
+        
     elif q_type == '-d':
         endpoint = config.get('u_endpoint')
         # Write delete query below
         query = """
                 DELETE DATA {
                     GRAPH <http://vitro.mannlib.cornell.edu/default/vitro-kb-2> {
-                    
+
                     }
                 }
                 """
+
+        payload = {
+        'email': email,
+        'password': password,
+        'update': query,
+        }
+        do_update(payload, endpoint)
+
     elif q_type == '-q':
         endpoint = config.get('q_endpoint')
         # Write query below
@@ -72,6 +87,13 @@ def main(q_type, config_path):
 
                 }
                 """
+        payload = {
+        'email': email,
+        'password': password,
+        'query': query,
+        }
+        do_query(payload, endpoint)
+
     else:
         print("Incorrect flag.")
 
